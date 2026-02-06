@@ -51,14 +51,12 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // Download CV button (placeholder - you'll need to add your actual resume file)
+    // Download CV button - now points to actual PDF file
     const downloadCV = document.getElementById('downloadCV');
     if (downloadCV) {
         downloadCV.addEventListener('click', function(e) {
-            e.preventDefault();
-            alert('Add your resume PDF file to enable download!\n\nInstructions:\n1. Add your resume.pdf to the same folder\n2. Update the href to: href="resume.pdf"');
-            // In production, replace alert with actual download:
-            // window.open('resume.pdf', '_blank');
+            // The download will happen automatically via the HTML download attribute
+            console.log('Resume download initiated');
         });
     }
 
