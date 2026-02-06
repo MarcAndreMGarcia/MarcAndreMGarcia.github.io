@@ -1,28 +1,5 @@
 // Smooth scroll animations on page load
 document.addEventListener('DOMContentLoaded', () => {
-    // Navigation Toggle
-    const navToggle = document.getElementById('navToggle');
-    const sideNav = document.getElementById('sideNav');
-    const navLinks = document.querySelectorAll('.nav-link');
-
-    navToggle.addEventListener('click', () => {
-        sideNav.classList.toggle('active');
-    });
-
-    // Close nav when clicking a link
-    navLinks.forEach(link => {
-        link.addEventListener('click', () => {
-            sideNav.classList.remove('active');
-        });
-    });
-
-    // Close nav when clicking outside
-    document.addEventListener('click', (e) => {
-        if (!sideNav.contains(e.target)) {
-            sideNav.classList.remove('active');
-        }
-    });
-
     // Active section tracking
     const sections = document.querySelectorAll('section[id], header[id]');
     
@@ -34,14 +11,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const sectionObserver = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
-                // Update active nav link
-                navLinks.forEach(link => {
-                    link.classList.remove('active');
-                    if (link.getAttribute('href') === `#${entry.target.id}`) {
-                        link.classList.add('active');
-                    }
-                });
-                
                 // Add fade-in animation
                 entry.target.classList.add('fade-in');
             }
