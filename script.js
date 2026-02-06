@@ -22,19 +22,23 @@ document.addEventListener('DOMContentLoaded', () => {
         sectionObserver.observe(section);
     });
 
-    // Smooth scrolling to anchor links
+    // Smooth scrolling to anchor links (only for # links, not mailto: or http:)
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
-            e.preventDefault();
-            const target = document.querySelector(this.getAttribute('href'));
-            if (target) {
-                const offset = 80; // Offset for fixed bottom bar
-                const targetPosition = target.getBoundingClientRect().top + window.pageYOffset - offset;
-                
-                window.scrollTo({
-                    top: targetPosition,
-                    behavior: 'smooth'
-                });
+            const href = this.getAttribute('href');
+            // Only prevent default for actual anchor links
+            if (href && href.startsWith('#')) {
+                e.preventDefault();
+                const target = document.querySelector(href);
+                if (target) {
+                    const offset = 80; // Offset for fixed bottom bar
+                    const targetPosition = target.getBoundingClientRect().top + window.pageYOffset - offset;
+                    
+                    window.scrollTo({
+                        top: targetPosition,
+                        behavior: 'smooth'
+                    });
+                }
             }
         });
     });
@@ -50,15 +54,6 @@ document.addEventListener('DOMContentLoaded', () => {
             this.style.transform = 'translateY(0) scale(1)';
         });
     });
-
-    // Download CV button - now points to actual PDF file
-    const downloadCV = document.getElementById('downloadCV');
-    if (downloadCV) {
-        downloadCV.addEventListener('click', function(e) {
-            // The download will happen automatically via the HTML download attribute
-            console.log('Resume download initiated');
-        });
-    }
 
     // Back to top functionality on bottom action bar home button
     const homeButtons = document.querySelectorAll('a[href="#home"]');
