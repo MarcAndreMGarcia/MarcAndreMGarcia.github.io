@@ -8,7 +8,22 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
+    <!-- Side Navigation Menu -->
+    <nav class="side-nav" id="sideNav">
+        <button class="nav-toggle" id="navToggle">
+            <span class="hamburger"></span>
+        </button>
+        <ul class="nav-links">
+            <li><a href="#home" class="nav-link active">Home</a></li>
+            <li><a href="#skills" class="nav-link">Skills</a></li>
+            <li><a href="#experience" class="nav-link">Experience</a></li>
+            <li><a href="#projects" class="nav-link">Projects</a></li>
+            <li><a href="#education" class="nav-link">Education</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+    </nav>
+
+    <header id="home">
         <div class="container">
             <div class="hero-content">
                 <h1>Marc Garcia</h1>
@@ -19,9 +34,9 @@
                     strategic planning, and auditing. Graduating March 2026.
                 </p>
                 <div class="contact-info">
-                    <a href="mailto:marcg928@gmail.com" class="contact-item">
+                    <a href="/cdn-cgi/l/email-protection#bdd0dccfdeda848f85fddad0dcd4d193ded2d0" class="contact-item">
                         <span>📧</span>
-                        <span>marcg928@gmail.com</span>
+                        <span><span class="__cf_email__" data-cfemail="6904081b0a0e505b51290e04080005470a0604">[email&#160;protected]</span></span>
                     </a>
                     <a href="https://www.linkedin.com/in/marc-garcia01/" target="_blank" class="contact-item">
                         <span>💼</span>
@@ -225,14 +240,50 @@
                 </div>
             </div>
         </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <h2>Get In Touch</h2>
+            <div class="contact-section">
+                <p class="contact-intro">I'm currently seeking internship opportunities for Summer 2026. Let's connect!</p>
+                <div class="contact-buttons">
+                    <a href="mailto:marcg928@gmail.com" class="cta-button primary">
+                        <span class="button-icon">✉️</span>
+                        <span>Email Me</span>
+                    </a>
+                    <a href="https://www.linkedin.com/in/marc-garcia01/" target="_blank" class="cta-button secondary">
+                        <span class="button-icon">💼</span>
+                        <span>LinkedIn</span>
+                    </a>
+                    <a href="#" class="cta-button tertiary" id="downloadCV">
+                        <span class="button-icon">📄</span>
+                        <span>Download Resume</span>
+                    </a>
+                </div>
+            </div>
+        </section>
     </main>
+
+    <!-- Bottom Action Bar -->
+    <div class="bottom-action-bar">
+        <a href="#home" class="action-btn">
+            <span class="action-icon">🏠</span>
+            <span class="action-label">Home</span>
+        </a>
+        <a href="#experience" class="action-btn">
+            <span class="action-icon">💼</span>
+            <span class="action-label">Experience</span>
+        </a>
+        <a href="#projects" class="action-btn">
+            <span class="action-icon">🚀</span>
+            <span class="action-label">Projects</span>
+        </a>
+        <a href="mailto:marcg928@gmail.com" class="action-btn highlight">
+            <span class="action-icon">✉️</span>
+            <span class="action-label">Contact</span>
+        </a>
+    </div>
 
     <footer>
         <div class="container">
-            <p>© 2026 Marc Garcia. Open to internship opportunities and professional connections.</p>
-        </div>
-    </footer>
-
-    <script src="script.js"></script>
-</body>
-</html>
+            <p>© 2026 Marc Garcia. Open to internship
