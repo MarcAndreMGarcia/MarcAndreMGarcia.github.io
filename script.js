@@ -1,13 +1,5 @@
 // Smooth scroll animations on page load
 document.addEventListener('DOMContentLoaded', () => {
-    // Populate email dynamically to avoid GitHub email protection
-    const emailDisplay = document.getElementById('email-display');
-    if (emailDisplay) {
-        const user = 'marcg928';
-        const domain = 'gmail.com';
-        emailDisplay.textContent = user + '@' + domain;
-    }
-
     // Active section tracking
     const sections = document.querySelectorAll('section[id], header[id]');
     
