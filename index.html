@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marc Garcia - Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Work+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css?v=2">
+</head>
+<body>
+    <button id="themeToggle" class="theme-toggle" aria-label="Toggle dark/light mode" onclick="window.toggleTheme()">
+        <span class="theme-icon">🌙</span>
+    </button>
+
+    <!-- Email Modal -->
+    <div class="email-modal-overlay" id="emailModalOverlay" onclick="if(event.target===this) window.closeEmailModal()">
+        <div class="email-modal">
+            <button type="button" class="email-modal-close" onclick="window.closeEmailModal()" aria-label="Close">&times;</button>
+            <span class="email-modal-icon">✉️</span>
+            <h3>Get In Touch</h3>
+            <p class="email-modal-address">marcg928@gmail.com</p>
+            <div class="email-modal-actions">
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=marcg928@gmail.com&su=Let's%20Connect" target="_blank" rel="noopener" class="cta-button primary">
+                    <span class="button-icon">📤</span>
+                    <span>Open in Gmail</span>
+                </a>
+                <button type="button" class="cta-button tertiary" onclick="window.copyEmailToClipboard()">
+                    <span class="button-icon" id="copyIcon">📋</span>
+                    <span id="copyLabel">Copy Email</span>
+                </button>
+                <a href="mailto:marcg928@gmail.com" class="email-modal-alt-link">or open your default email app</a>
+            </div>
+        </div>
+    </div>
+
+    <header id="home">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Marc Garcia</h1>
+                <p class="subtitle">Marketing and Development Intern @ Vocational Visions | Business and Digital Marketing, Conducting Market Research</p>
+                <p class="bio">
+                    A recent graduate from the University of California, Santa Cruz, with a Bachelor's degree in Business Management Economics. Currently contributing as a Marketing and Development Intern at Vocational Visions, leveraging a foundation in business marketing and advertising to support organizational initiatives. Experienced in conducting market research, developing community engagement strategies, and refining brand positioning. Motivated to build expertise in finance, marketing, and accounting through impactful collaborations and professional opportunities. Open to connecting with peers and professionals to explore diverse industries and expand knowledge. Feel free to reach out at marcg928@gmail.com
+                </p>
+                <div class="contact-info">
+                    <a href="#contact" class="contact-item">
+                        <span>📧</span>
+                        <span>Contact Me</span>
+                    </a>
+                    <a href="https://www.linkedin.com/in/marc-garcia01/" target="_blank" class="contact-item">
+                        <span>💼</span>
+                        <span>LinkedIn</span>
+                    </a>
+                    <div class="contact-item">
+                        <span>📍</span>
+                        <span>Orange County, CA</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <!-- Skills Section -->
+        <section id="skills">
+            <h2>Core Skills</h2>
+            <div class="skills-compact">
+                <div class="skills-category">
+                    <h4 class="skills-category-title">Technical Skills</h4>
+                    <div class="skill-pills">
+                        <span class="skill-pill">Digital Marketing</span>
+                        <span class="skill-pill">AI Fluency</span>
+                        <span class="skill-pill">Marketing Strategy</span>
+                        <span class="skill-pill">Data Analysis</span>
+                        <span class="skill-pill">Market Research</span>
+                        <span class="skill-pill">Business Analysis</span>
+                        <span class="skill-pill">Business Marketing</span>
+                        <span class="skill-pill">Advertising</span>
+                        <span class="skill-pill">Program Evaluation</span>
+                        <span class="skill-pill">Microsoft Office Suite</span>
+                        <span class="skill-pill">Microsoft Excel</span>
+                        <span class="skill-pill">Microsoft Word</span>
+                        <span class="skill-pill">AutoCAD</span>
+                        <span class="skill-pill">SOLIDWORKS</span>
+                        <span class="skill-pill">Cash Handling</span>
+                        <span class="skill-pill">Online Retail</span>
+                    </div>
+                </div>
+                <div class="skills-category">
+                    <h4 class="skills-category-title">Soft Skills</h4>
+                    <div class="skill-pills">
+                        <span class="skill-pill">Critical Thinking</span>
+                        <span class="skill-pill">Problem Solving</span>
+                        <span class="skill-pill">Project Management</span>
+                        <span class="skill-pill">Strategic Planning</span>
+                        <span class="skill-pill">Leadership</span>
+                        <span class="skill-pill">Team Building</span>
+                        <span class="skill-pill">Personnel Management</span>
+                        <span class="skill-pill">Communication</span>
+                        <span class="skill-pill">Time Management</span>
+                        <span class="skill-pill">Customer Service</span>
+                        <span class="skill-pill">Multitasking</span>
+                        <span class="skill-pill">Interpersonal Skills</span>
+                        <span class="skill-pill">Adaptability</span>
+                        <span class="skill-pill">Fundraising</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience">
+            <h2>Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-header">
+                        <div class="timeline-title">
+                            <h3>Marketing and Development Intern</h3>
+                            <p class="company">Vocational Visions</p>
+                        </div>
+                        <span class="timeline-date">Jul 2026 - Present</span>
+                    </div>
+                    <p class="timeline-location">Mission Viejo, CA</p>
+                    <ul>
+                        <li>Consolidated and organized years of donor records and fundraising data into a centralized database, improving accessibility, record accuracy, and team efficiency</li>
+                        <li>Utilized DonorPerfect CRM to manage donor relationships, maintain contact records, and support targeted email and direct-mail marketing campaigns</li>
+                        <li>Assisted in creating promotional videos and capturing content for community events to increase awareness of Vocational Visions programs and nonprofit initiatives</li>
+                        <li>Supported marketing and outreach efforts by promoting fundraising campaigns and community events through digital and in-person engagement</li>
+                        <li>Prepared and distributed donor outreach materials in support of fundraising campaigns and community partnerships</li>
+                    </ul>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-header">
+                        <div class="timeline-title">
+                            <h3>Marketing Intern</h3>
+                            <p class="company">PIE Dev Studios</p>
+                        </div>
+                        <span class="timeline-date">Jun 2025 - Present</span>
+                    </div>
+                    <p class="timeline-location">Remote</p>
+                    <ul>
+                        <li>Conducted market research and competitive analysis to refine brand positioning and support pre-launch growth strategy</li>
+                        <li>Developed data-informed community engagement initiatives to build early user traction prior to product release</li>
+                        <li>Collaborated with developers and the marketing team in weekly strategy meetings to align launch goals</li>
+                        <li>Transform long-form studio blog content into high-engagement Instagram marketing visuals and posts using Photoshop and Photopea</li>
+                        <li>Contribute to product refinement by participating in structured user feedback sessions to improve gameplay quality</li>
+                    </ul>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-header">
+                        <div class="timeline-title">
+                            <h3>Head Server</h3>
+                            <p class="company">Chloe's Kitchen</p>
+                        </div>
+                        <span class="timeline-date">Mar 2025 - Jun 2026</span>
+                    </div>
+                    <p class="timeline-location">Santa Cruz, CA</p>
+                    <ul>
+                        <li>Manage high-volume service operations while maintaining customer satisfaction and efficiency</li>
+                        <li>Coordinate between front of house and kitchen staff to optimize order flow and reduce service delays</li>
+                        <li>Resolve customer concerns professionally to uphold brand reputation</li>
+                        <li>Operate POS systems and handle payment processing accurately</li>
+                        <li>Oversaw end-of-day cash reconciliation and balanced register totals to maintain financial accuracy and accountability</li>
+                    </ul>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-header">
+                        <div class="timeline-title">
+                            <h3>Salesperson</h3>
+                            <p class="company">Depop (Self-Employed)</p>
+                        </div>
+                        <span class="timeline-date">Dec 2023 - Dec 2025</span>
+                    </div>
+                    <ul>
+                        <li>Operated a Depop storefront, managing product listings, pricing, and customer communication</li>
+                        <li>Created engaging product listings with detailed descriptions and photography</li>
+                        <li>Provided consistent customer service to build positive reputation</li>
+                    </ul>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-header">
+                        <div class="timeline-title">
+                            <h3>Shift Lead</h3>
+                            <p class="company">Yogurtland</p>
+                        </div>
+                        <span class="timeline-date">Oct 2022 - Sep 2023</span>
+                    </div>
+                    <p class="timeline-location">Lake Forest, CA</p>
+                    <ul>
+                        <li>Led store operations during shifts, ensuring smooth workflow and optimal customer service</li>
+                        <li>Managed inventory, tracked stock levels, and placed orders</li>
+                        <li>Managed cash handling and prepared financial reports with accuracy</li>
+                        <li>Trained and supervised team members to ensure efficiency and customer satisfaction</li>
+                        <li>Demonstrated leadership by resolving problems and ensuring store profitability</li>
+                    </ul>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-header">
+                        <div class="timeline-title">
+                            <h3>Courtesy Clerk</h3>
+                            <p class="company">Stater Bros. Markets</p>
+                        </div>
+                        <span class="timeline-date">Jun 2022 - Nov 2022</span>
+                    </div>
+                    <p class="timeline-location">Lake Forest, CA</p>
+                    <ul>
+                        <li>Provided excellent customer service, assisting shoppers with product locations</li>
+                        <li>Maintained store organization through routine cleaning and cart management</li>
+                        <li>Developed product knowledge to assist customers efficiently</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects">
+            <h2>Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h3>Clothing Drive Initiative</h3>
+                    <p class="project-date">Jan 2021 - Dec 2022</p>
+                    <div class="project-images">
+                        <img src="clothing-drive-1.png" alt="Collected clothing bags" class="project-image">
+                        <img src="clothing-drive-2.png" alt="Clothing the Homeless van" class="project-image">
+                    </div>
+                    <ul>
+                        <li>Led and organized a clothing drive at local church for two years</li>
+                        <li>Partnered with Clothing the Homeless, Laura's House, Salvation Army, and South County Outreach</li>
+                        <li>Successfully collected and distributed over 250 bags of clothing to homeless individuals</li>
+                        <li>Utilized video announcements and community engagement to maximize donations</li>
+                        <li>Coordinated volunteers and handled distribution logistics</li>
+                    </ul>
+                    <span class="project-highlight">250+ bags collected</span>
+                </div>
+
+                <div class="project-card">
+                    <h3>Saint Dymphna Memorial</h3>
+                    <p class="project-date">Jan 2022 - Jan 2023</p>
+                    <img src="st-dymphna-memorial.png" alt="Saint Dymphna Memorial Shrine" class="project-image">
+                    <ul>
+                        <li>Designed and planned a permanent shrine for Saint Dymphna, the Saint of Mental Health</li>
+                        <li>Secured over $6,000 in funding through successful fundraising initiatives</li>
+                        <li>Managed project finances and budgeting while maintaining high standards</li>
+                        <li>Worked closely with church leadership, contractors, donors, and volunteers</li>
+                        <li>Directed all aspects from planning to execution, coordinating materials and timelines</li>
+                        <li>Quickly resolved unexpected site challenges by reorganizing construction plans</li>
+                    </ul>
+                    <span class="project-highlight">$6,000+ raised</span>
+                </div>
+
+                <div class="project-card">
+                    <h3>Nike Sports Nutrition Market Strategy</h3>
+                    <p class="project-date">Oct 2025 - Nov 2025</p>
+                    <div class="slideshow" data-slideshow="nike">
+                        <div class="slideshow-track">
+                            <img src="nike-slide-1.jpg" alt="Nike Slide 1" class="slide-img active">
+                            <img src="nike-slide-2.jpg" alt="Nike Slide 2" class="slide-img">
+                            <img src="nike-slide-3.jpg" alt="Nike Slide 3" class="slide-img">
+                            <img src="nike-slide-4.jpg" alt="Nike Slide 4" class="slide-img">
+                            <img src="nike-slide-5.jpg" alt="Nike Slide 5" class="slide-img">
+                            <img src="nike-slide-6.jpg" alt="Nike Slide 6" class="slide-img">
+                            <img src="nike-slide-7.jpg" alt="Nike Slide 7" class="slide-img">
+                            <img src="nike-slide-8.jpg" alt="Nike Slide 8" class="slide-img">
+                            <img src="nike-slide-9.jpg" alt="Nike Slide 9" class="slide-img">
+                            <img src="nike-slide-10.jpg" alt="Nike Slide 10" class="slide-img">
+                            <img src="nike-slide-11.jpg" alt="Nike Slide 11" class="slide-img">
+                            <img src="nike-slide-12.jpg" alt="Nike Slide 12" class="slide-img">
+                            <img src="nike-slide-13.jpg" alt="Nike Slide 13" class="slide-img">
+                            <img src="nike-slide-14.jpg" alt="Nike Slide 14" class="slide-img">
+                            <img src="nike-slide-15.jpg" alt="Nike Slide 15" class="slide-img">
+                            <img src="nike-slide-16.jpg" alt="Nike Slide 16" class="slide-img">
+                        </div>
+                        <button type="button" class="slide-btn prev" aria-label="Previous slide" onclick="window.moveSlide(this, -1)">&#10094;</button>
+                        <button type="button" class="slide-btn next" aria-label="Next slide" onclick="window.moveSlide(this, 1)">&#10095;</button>
+                        <div class="slide-counter"><span class="current-slide">1</span> / <span class="total-slides">16</span></div>
+                    </div>
+                    <ul>
+                        <li>Developed a detailed market entry strategy proposing Nike's expansion into the sports nutrition industry, focusing on performance-focused consumers as well as college and professional athletes</li>
+                        <li>Conducted market research and competitive analysis to get an overview of industry trends, market opportunities, consumer behavior, and positioning against already established supplement brands</li>
+                        <li>Performed a SWOT analysis and identified strategic opportunities, market risks, and competitive challenges to support long-term business growth</li>
+                        <li>Designed an integrated marketing plan including product positioning, pricing strategy, distribution channels, partnership opportunities, and customer acquisition initiatives</li>
+                        <li>Developed measurable business objectives, revenue projections, implementation timelines, and key performance indicators to evaluate marketing effectiveness</li>
+                        <li>Presented data-driven recommendations through presentations, applying strategic planning and business communication skills to support a mock product launch</li>
+                    </ul>
+                    <span class="project-highlight">Market Strategy & Analysis</span>
+                </div>
+
+                <div class="project-card">
+                    <h3>Healthcare Systems Efficiency & Equity Analysis</h3>
+                    <p class="project-date">Sep 2025 - Dec 2025</p>
+                    <div class="slideshow" data-slideshow="healthcare">
+                        <div class="slideshow-track">
+                            <img src="healthcare-slide-1.jpg" alt="Healthcare Slide 1" class="slide-img active">
+                            <img src="healthcare-slide-2.jpg" alt="Healthcare Slide 2" class="slide-img">
+                            <img src="healthcare-slide-3.jpg" alt="Healthcare Slide 3" class="slide-img">
+                            <img src="healthcare-slide-4.jpg" alt="Healthcare Slide 4" class="slide-img">
+                            <img src="healthcare-slide-5.jpg" alt="Healthcare Slide 5" class="slide-img">
+                            <img src="healthcare-slide-6.jpg" alt="Healthcare Slide 6" class="slide-img">
+                            <img src="healthcare-slide-7.jpg" alt="Healthcare Slide 7" class="slide-img">
+                            <img src="healthcare-slide-8.jpg" alt="Healthcare Slide 8" class="slide-img">
+                            <img src="healthcare-slide-9.jpg" alt="Healthcare Slide 9" class="slide-img">
+                            <img src="healthcare-slide-10.jpg" alt="Healthcare Slide 10" class="slide-img">
+                            <img src="healthcare-slide-11.jpg" alt="Healthcare Slide 11" class="slide-img">
+                            <img src="healthcare-slide-12.jpg" alt="Healthcare Slide 12" class="slide-img">
+                            <img src="healthcare-slide-13.jpg" alt="Healthcare Slide 13" class="slide-img">
+                            <img src="healthcare-slide-14.jpg" alt="Healthcare Slide 14" class="slide-img">
+                            <img src="healthcare-slide-15.jpg" alt="Healthcare Slide 15" class="slide-img">
+                        </div>
+                        <button type="button" class="slide-btn prev" aria-label="Previous slide" onclick="window.moveSlide(this, -1)">&#10094;</button>
+                        <button type="button" class="slide-btn next" aria-label="Next slide" onclick="window.moveSlide(this, 1)">&#10095;</button>
+                        <div class="slide-counter"><span class="current-slide">1</span> / <span class="total-slides">15</span></div>
+                    </div>
+                    <ul>
+                        <li>Conducted in-depth research on the U.S. healthcare system, analyzing the tradeoffs between operational efficiency, cost management, and equitable access to care</li>
+                        <li>Evaluated healthcare policies and industry trends using both qualitative and quantitative research to identify opportunities for improving patient outcomes and system performance</li>
+                        <li>Analyzed real-world healthcare challenges by comparing public and private healthcare models, supporting evidence-based recommendations</li>
+                        <li>Synthesized complex research findings into a professional report and 15 minute presentation, effectively communicating insights to academic audiences</li>
+                        <li>Applied critical thinking and data analysis to healthcare resource allocation, accessibility, and long-term sustainability</li>
+                        <li>Strengthened analytical, research, and problem-solving skills through the evaluation of healthcare systems, policy impacts, and organizational decision-making</li>
+                    </ul>
+                    <span class="project-highlight">Research & Policy Analysis</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education">
+            <h2>Education</h2>
+            <div class="education-grid">
+                <div class="education-card">
+                    <div class="education-header">
+                        <div>
+                            <h3>University of California, Santa Cruz</h3>
+                            <p class="degree">Bachelor's Degree in Business Management Economics</p>
+                        </div>
+                        <span class="timeline-date">Sep 2023 - Mar 2026</span>
+                    </div>
+                    <p class="activities"><strong>Skills:</strong> Microsoft Excel, Microsoft Word, Data Analysis</p>
+                </div>
+
+                <div class="education-card">
+                    <div class="education-header">
+                        <div>
+                            <h3>El Toro High School</h3>
+                        </div>
+                        <span class="timeline-date">2019 - 2023</span>
+                    </div>
+                    <p class="activities"><strong>Activities:</strong> National Honors Society, Varsity Tennis, California Scholarship Federation</p>
+                    <p class="activities"><strong>Skills:</strong> AutoCAD, SOLIDWORKS</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certifications Section -->
+        <section id="certifications">
+            <h2>Licenses & Certifications</h2>
+            <div class="cert-grid">
+                <div class="cert-card">
+                    <img src="cert-digital-marketing.png" alt="Digital Marketing Certified - HubSpot Academy" class="cert-image">
+                    <div class="cert-header">
+                        <span class="cert-icon">📈</span>
+                        <div>
+                            <h3>Digital Marketing Certified</h3>
+                            <p class="cert-issuer">HubSpot Academy</p>
+                        </div>
+                    </div>
+                    <p class="cert-meta">Issued Jul 2026 · Expires Aug 2027</p>
+                    <p class="cert-id">Credential ID: fw2dd7zn</p>
+                </div>
+
+                <div class="cert-card">
+                    <img src="cert-claude-101.png" alt="Claude 101 Certificate of Completion - Anthropic" class="cert-image">
+                    <div class="cert-header">
+                        <span class="cert-icon">🤖</span>
+                        <div>
+                            <h3>Certificate of Completion: Claude 101</h3>
+                            <p class="cert-issuer">Anthropic</p>
+                        </div>
+                    </div>
+                    <p class="cert-meta">Issued Jul 2026</p>
+                    <p class="cert-id">Credential ID: zkmtwces3ud4</p>
+                </div>
+
+                <div class="cert-card">
+                    <img src="cert-ai-fluency.png" alt="AI Fluency Framework and Foundations Certificate - Anthropic" class="cert-image">
+                    <div class="cert-header">
+                        <span class="cert-icon">🧠</span>
+                        <div>
+                            <h3>Certificate of Completion: AI Fluency Framework & Foundations</h3>
+                            <p class="cert-issuer">Anthropic</p>
+                        </div>
+                    </div>
+                    <p class="cert-meta">Issued Jul 2026</p>
+                    <p class="cert-id">Credential ID: jnf42zafez4p</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <h2>Get In Touch</h2>
+            <div class="contact-section">
+                <p class="contact-intro">Currently seeking full-time opportunities in Marketing, Brand Strategy, and Growth. Let's connect!</p>
+                <p class="email-display-large">📧 marcg928@gmail.com</p>
+                <div class="contact-buttons">
+                    <button type="button" class="cta-button primary" onclick="window.openEmailModal()">
+                        <span class="button-icon">✉️</span>
+                        <span>Email Me</span>
+                    </button>
+                    <a href="https://www.linkedin.com/in/marc-garcia01/" target="_blank" class="cta-button secondary">
+                        <span class="button-icon">💼</span>
+                        <span>LinkedIn</span>
+                    </a>
+                    <a href="Marc_Garcia_Resume.pdf" download class="cta-button tertiary">
+                        <span class="button-icon">📄</span>
+                        <span>Download Resume</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Bottom Action Bar -->
+    <div class="bottom-action-bar">
+        <a href="#home" class="action-btn">
+            <span class="action-icon">🏠</span>
+            <span class="action-label">Home</span>
+        </a>
+        <a href="#skills" class="action-btn">
+            <span class="action-icon">⚡</span>
+            <span class="action-label">Skills</span>
+        </a>
+        <a href="#experience" class="action-btn">
+            <span class="action-icon">💼</span>
+            <span class="action-label">Experience</span>
+        </a>
+        <a href="#projects" class="action-btn">
+            <span class="action-icon">🚀</span>
+            <span class="action-label">Projects</span>
+        </a>
+        <a href="#education" class="action-btn">
+            <span class="action-icon">🎓</span>
+            <span class="action-label">Education</span>
+        </a>
+        <a href="#certifications" class="action-btn">
+            <span class="action-icon">📜</span>
+            <span class="action-label">Certs</span>
+        </a>
+        <a href="#contact" class="action-btn highlight">
+            <span class="action-icon">✉️</span>
+            <span class="action-label">Contact</span>
+        </a>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>© 2026 Marc Garcia. Building projects, growing brands, and always learning. Open to new opportunities.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Email modal functions - inline for guaranteed reliability
+        window.openEmailModal = function() {
+            const overlay = document.getElementById('emailModalOverlay');
+            if (overlay) {
+                overlay.classList.add('active');
+                document.body.style.overflow = 'hidden';
+            }
+        };
+        window.closeEmailModal = function() {
+            const overlay = document.getElementById('emailModalOverlay');
+            if (overlay) {
+                overlay.classList.remove('active');
+                document.body.style.overflow = '';
+            }
+        };
+        window.copyEmailToClipboard = function() {
+            const email = 'marcg928@gmail.com';
+            const label = document.getElementById('copyLabel');
+            const icon = document.getElementById('copyIcon');
+            function showCopied() {
+                if (label) label.textContent = 'Copied!';
+                if (icon) icon.textContent = '✅';
+                setTimeout(() => {
+                    if (label) label.textContent = 'Copy Email';
+                    if (icon) icon.textContent = '📋';
+                }, 2000);
+            }
+            if (navigator.clipboard && navigator.clipboard.writeText) {
+                navigator.clipboard.writeText(email).then(showCopied).catch(() => {
+                    fallbackCopy(email, showCopied);
+                });
+            } else {
+                fallbackCopy(email, showCopied);
+            }
+            function fallbackCopy(text, cb) {
+                const temp = document.createElement('textarea');
+                temp.value = text;
+                temp.style.position = 'fixed';
+                temp.style.opacity = '0';
+                document.body.appendChild(temp);
+                temp.select();
+                try { document.execCommand('copy'); } catch (e) {}
+                document.body.removeChild(temp);
+                cb();
+            }
+        };
+        // Close modal on Escape key
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') window.closeEmailModal();
+        });
+
+        // Theme toggle - inline for guaranteed reliability
+        window.toggleTheme = function() {
+            const body = document.body;
+            const icon = document.querySelector('.theme-icon');
+            body.classList.toggle('light-mode');
+            const isLight = body.classList.contains('light-mode');
+            if (icon) icon.textContent = isLight ? '☀️' : '🌙';
+            try {
+                localStorage.setItem('theme', isLight ? 'light' : 'dark');
+            } catch (e) {}
+        };
+        // Apply saved theme on load
+        (function() {
+            try {
+                const saved = localStorage.getItem('theme');
+                if (saved === 'light') {
+                    document.body.classList.add('light-mode');
+                    document.addEventListener('DOMContentLoaded', () => {
+                        const icon = document.querySelector('.theme-icon');
+                        if (icon) icon.textContent = '☀️';
+                    });
+                }
+            } catch (e) {}
+        })();
+
+        // Inline slideshow function - guaranteed to work even if script.js fails to load
+        window.moveSlide = function(btn, direction) {
+            const slideshow = btn.closest('.slideshow');
+            if (!slideshow) return;
+            const slides = slideshow.querySelectorAll('.slide-img');
+            const counter = slideshow.querySelector('.current-slide');
+            let currentIndex = 0;
+            slides.forEach((slide, i) => {
+                if (slide.classList.contains('active')) currentIndex = i;
+            });
+            slides[currentIndex].classList.remove('active');
+            currentIndex = (currentIndex + direction + slides.length) % slides.length;
+            slides[currentIndex].classList.add('active');
+            if (counter) counter.textContent = currentIndex + 1;
+        };
+    </script>
+    <script src="script.js?v=3"></script>
+</body>
+</html> 
